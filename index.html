@@ -1,0 +1,468 @@
+﻿<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Erdwark</title>
+
+  <style type="text/css">
+
+    h1 {
+      font-size: 80px;
+    }
+
+    h2 {
+      font-size: 50px;
+      margin: 0;
+      padding: 50px 0;
+    }
+
+    h3 {
+      font-size: 40px;
+      margin: 0;
+      padding: 30px 0 20px 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    body {
+      font: bold 18px Garamond, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+      nav ul {
+        display: flex;
+        margin: 0px 100px;
+        padding: 0;
+      }
+
+        nav ul li {
+          list-style: none;
+          margin: 0 20px;
+        }
+
+    footer {
+      height: 350px;
+      background: linear-gradient(180deg, rgba(100,184,201,0.6138830532212884) 0%, rgba(142,193,204,0.18531162464985995) 13%, rgba(255,255,255,0.76234243697479) 34%, rgba(255,255,255,1) 100%);
+    }
+
+    #footerimage {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #footertext {
+      padding: 0 400px 0 0;
+    }
+
+    #footerblock {
+      padding: 63px 100px 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #page1 {
+      width: 100%;
+      height: 100%;
+      background-image: url('photos/download_image_1701802138412.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    #page2 {
+      width: 100%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(158,202,211,0.5186449579831933) 2%, rgba(182,218,225,0.5018382352941176) 10%, rgba(255,255,255,1) 26%);
+    }
+
+    #page3 {
+      width: 100%;
+      height: 80%;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(182,218,225,0.5018382352941176) 29%, rgba(114,178,191,0.5186449579831933) 48%, rgba(173,210,218,0.4766281512605042) 68%, rgba(255,255,255,1) 94%);
+    }
+
+    #page4 {
+      width: 100%;
+      height: 90%;
+      text-align: center;
+      background: #b5def1;
+    }
+
+    #page5 {
+      width: 100%;
+      height: 120%;
+      background: linear-gradient(180deg, rgba(100,184,201,0.7819502801120448) 0%, rgba(142,193,204,0.76234243697479) 12%, rgba(255,255,255,1) 100%, rgba(255,255,255,0.76234243697479) 100%);
+    }
+
+    #page6 {
+      width: 100%;
+      height: 100%;
+      background: #b5def1;
+    }
+
+    #page1body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0px;
+    }
+
+    #page2body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 200px 100px 0 100px;
+    }
+
+    #page3body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 100px 100px 100px;
+    }
+
+    #page4body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 100px 100px 100px;
+    }
+
+    #page5body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 100px;
+    }
+
+    #page6body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    #page4items {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #page5items {
+      display: flex;
+      margin: 50px 0 0 0;
+    }
+
+    #page4item {
+      margin: 0 50px 0 0;
+    }
+
+    #page5item {
+      margin: 0 50px 0 0;
+    }
+
+    #page1bodytext {
+      margin: 0px 200px;
+    }
+
+    #page6text {
+      display: flex;
+      flex-direction: column;
+      padding: 100px 0;
+      margin: 0 200px 0 0;
+    }
+
+    #page6form {
+      width: 500px;
+      height: 330px;
+      background-color: rgba(255,255,255,1);
+      border-radius: 30px;
+      padding: 30px 80px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttonnav {
+      margin: 0 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      background-color: #446982;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .buttonnav:hover {
+      background-color: #2980b9;
+    }
+
+
+    .button {
+      margin: 50px 0;
+      display: inline-block;
+      padding: 20px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      background-color: #446982;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+      .button:hover {
+        background-color: #2980b9;
+      }
+
+    .input-field {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #446982;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+      .submit-button:hover {
+        background-color: #2980b9;
+      }
+  </style>
+
+</head>
+<body>
+  <div id="page1">
+    <nav>
+      <img src="photos\Screenshot_2023-12-05_221853-removebg-preview.png" width="150" height="120">
+      <ul>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Gifts</li>
+        <li>Cards</li>
+      </ul>
+      <button class="buttonnav" onclick="window.location.href='#page6'">Sign in</button>
+      <button class="buttonnav" onclick="window.location.href='#page6'">Sign up</button>
+    </nav>
+    <div id="page1body">
+      <div id="page1bodytext">
+        <h1>Hey, it`s <br />Christmas time!</h1>
+        <p>Find the perfect holiday gift for everyone on your list this <br />year, no matter what`s your budget.<br></p>
+        <button class="button" onclick="window.location.href='#page6'">Explore now</button>
+      </div>
+      <img src="photos\santa1.png" width="300" height="300" style="margin: 0 0 60px 0">
+    </div>
+  </div>
+
+  <div id="page2">
+    <div id="page2body">
+      <img src="photos\santa2.jpg" width="500" height="500" style="margin: 0 100px 0 0">
+      <div id="page2bodytext">
+        <h1>Santa claus is <br />Coming</h1>
+        <p>
+          Fill your Christmas holiday with good cheer, joyful decorations, and <br />
+          unforgettable experience. Feel free to attend our Christmas event with <br />
+          your children and family and celebrate the most anticipated winter<br />
+          holiday. From Christmas carols to activities for adults and children, <br />
+          Sannta has a lot to offer.<br />
+        </p>
+        <button class="button" onclick="window.location.href='#page6'">Get you a gift</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="page3">
+    <div id="page3body">
+      <div id="page3bodytext">
+        <h1>Christmas wish<br />and party</h1>
+        <p>
+          Fill your Christmas holiday with good cheer, joyful decorations, and <br />
+          unforgettable experience. Feel free to attend our Christmas event with <br />
+          your children and family and celebrate the most anticipated winter<br />
+          holiday. From Christmas carols to activities for adults and children, <br />
+          Sannta has a lot to offer.<br />
+        </p>
+        <button class="button" onclick="window.location.href='#page6'">Get you a gift</button>
+      </div>
+      <img src="photos\tree.png" width="400" height="600" style="margin: 0 0 0 100px">
+    </div>
+  </div>
+
+  <div id="page4">
+    <div id="page4body">
+      <div id="page4bodytext">
+        <h1>Gift items</h1>
+        <p>
+          Christmas is an annual festival commemorating the birth of Jesus Christ, a cultural<br />
+          celebration among billions of people around the world.<br /><br /><br /><br />
+        </p>
+        <div id="page4items">
+          <div id="page4item">
+            <img src="photos\icon3.png" width="100" height="100">
+            <h2>Hat</h2>
+            <p>
+              Inspirational Christmas Greetings<br />
+              Messages for your loved ones - whether<br />
+              you're sending a small gift to grandma<br />
+              or need something special to write for.<br />
+            </p>
+          </div>
+          <div id="page4item">
+            <img src="photos\icon2.png" width="80" height="100">
+            <h2>Tree</h2>
+            <p>
+              Inspirational Christmas Greetings<br />
+              Messages for your loved ones - whether<br />
+              you're sending a small gift to grandma<br />
+              or need something special to write for.<br />
+            </p>
+          </div>
+          <div id="page4item">
+            <img src="photos\icon1.png" width="135" height="100">
+            <h2>Bell</h2>
+            <p>
+              Inspirational Christmas Greetings<br />
+              Messages for your loved ones - whether<br />
+              you're sending a small gift to grandma<br />
+              or need something special to write for.<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page5">
+    <div id="page5body">
+      <img src="photos\cookies.png" width="400" height="900" style="margin: 0 200px 0 0">
+      <div id="page2bodytext">
+        <h1>About the live<br />event</h1>
+        <p>
+          Fill your Christmas holiday with good cheer, joyful decorations, and <br />
+          unforgettable experience. Feel free to attend our Christmas event with <br />
+          your children and family and celebrate the most anticipated winter<br />
+          holiday. From Christmas carols to activities for adults and children, Sannta<br />
+          has a lot to offer.
+        </p>
+        <div id="page5items">
+          <div id="page5item">
+            <img src="photos\berries.jpg" width="90" height="80">
+            <h3>Beautiful Design</h3>
+            <p>
+              Contrary to popular belief,<br />
+              Lorem Ipsum is not simply<br />
+              random text.
+            </p>
+          </div>
+          <div id="page5item">
+            <img src="photos\snowman.jpg" width="70" height="80">
+            <h3>Great Sound</h3>
+            <p>
+              Contrary to popular belief,<br />
+              Lorem Ipsum is not simply<br />
+              random text.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page6">
+    <div id="page6body">
+      <div id="page6text">
+        <h1>Join the party</h1>
+        <div id="page6form">
+          <h3 style="padding: 0">Contact Us</h3>
+          <p>Please fill this form in a decent manner</p>
+
+          <input type="text" id="name" name="name" placeholder="Name" class="input-field"><br><br>
+          <input type="email" id="email" name="email" placeholder="Email" class="input-field"><br><br>
+          <input type="text" id="subject" name="subject" placeholder="Subject" class="input-field"><br><br>
+          <input type="submit" value="Submit" class="submit-button" onclick="setUserFormData()">
+
+        </div>
+      </div>
+      <img src="photos\santa3.jpg" width="600" height="500">
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerblock">
+      <div id="footertext">
+        <h3>Stay In Touch</h3>
+        <p>Don`t be a stranger and start following us :)</p>
+      </div>
+      <img src="photos\medias.png" width="200" height="40">
+    </div>
+
+    <div id="footerimage">
+      <img src="photos\2.png" width="950" height="150">
+      <img src="photos\2.png" width="950" height="150">
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+
+  function setUserFormData() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+
+    var userDataString = name + "|" + email + "|" + subject;
+
+    var existingData = decodeURIComponent(document.cookie);
+
+    var updatedData = existingData ? existingData + ";userData=" + userDataString : "userData=" + userDataString;
+
+    document.cookie = encodeURIComponent(updatedData) + "; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";
+
+    displayRandomUserFormData();
+  }
+
+  function displayRandomUserFormData() {
+    var existingData = decodeURIComponent(document.cookie);
+
+    if (existingData) {
+      var userDataArray = existingData.split(';').filter(function (entry) {
+        return entry.trim().startsWith("userData=");
+      });
+
+      if (userDataArray.length > 1) {
+        var randomIndex = Math.floor(Math.random() * (userDataArray.length - 1));
+        var randomUserData = userDataArray[randomIndex].substring(9);
+        var userData = randomUserData.split("|");
+
+        alert("Random User Data:\nName: " + userData[0] + "\nEmail: " + userData[1] + "\nSubject: " + userData[2]);
+      }
+      else {
+        alert("We will send your ward soon!");
+      }
+    }
+    else {
+      alert("No user data found.");
+    }
+  }
+
+</script>
